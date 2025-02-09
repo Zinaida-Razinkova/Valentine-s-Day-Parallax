@@ -53,7 +53,7 @@ button {
 
 body {
   font-family: "Great Vibes", serif;
-  background-color: #f1edef;
+  background-color: #f1f1f1;
 }
 
 .wrapper {
@@ -118,6 +118,7 @@ body {
   background: url("../images/b-01.png") 0 0/270% no-repeat;
   padding-bottom: 90%;
 }
+
 .main-screen__hearts_2 {
   width: 40vh;
   max-width: 25%;
@@ -177,52 +178,42 @@ body {
 }
 @media screen and (max-width: 325.98px) {
   .content__title {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 }
 @media screen and (min-width: 326px) and (max-width: 375.98px) {
   .content__title {
-    margin-bottom: 120px;
+    margin-bottom: 250px;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 768.98px) {
   .content__title {
-    margin-bottom: 170px;
+    margin-bottom: 470px;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 1280.98px) {
+@media screen and (min-width: 767px) and (max-width: 1023.98px) {
   .content__title {
-    margin-bottom: 200px;
+    margin-bottom: 600px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280.98px) {
+  .content__title {
+    margin-bottom: 650px;
   }
 }
 @media screen and (min-width: 1281px) and (max-width: 1440.98px) {
   .content__title {
-    margin-bottom: 250px;
+    margin-bottom: 350px;
   }
 }
 @media screen and (min-width: 1441px) and (max-width: 2000.98px) {
   .content__title {
-    margin-bottom: 400px;
+    margin-bottom: 500px;
   }
 }
 @media screen and (min-width: 2001px) {
   .content__title {
-    margin-bottom: 350px;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 600px) {
-  .content__title {
-    margin-bottom: 550px;
-  }
-}
-@media only screen and (max-width: 1180px) and (min-width: 820px) {
-  .content__title {
-    margin-bottom: 750px;
-  }
-}
-@media only screen and (max-width: 1024px) and (min-width: 600px) {
-  .content__title {
-    margin-bottom: 350px;
+    margin-bottom: 450px;
   }
 }
 
