@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+body {
+  font-family: "Great Vibes", serif;
+  background-color: #f1edef;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: clip;
+}
+
+.main-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.main-screen__clouds,
+.main-screen__clouds span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  will-change: transform;
+}
+
+.main-screen__clouds_4 span {
+  background: url("../images/t-04.png") bottom/auto 65% repeat-x;
+}
+
+.main-screen__clouds_3 span {
+  background: url("../images/t-03.png") bottom/auto 90% repeat-x;
+}
+
+.main-screen__clouds_2 span {
+  background: url("../images/t-02.png") bottom/auto 80% repeat-x;
+}
+
+.main-screen__clouds_1 span {
+  background: url("../images/t-01.png") bottom/auto 90% repeat-x;
+}
+
+.main-screen__hearts {
+  position: absolute;
+  z-index: 2;
+}
+
+.main-screen__hearts span {
+  display: block;
+}
+
+.main-screen__hearts_1 {
+  width: 40vh;
+  max-width: 40%;
+  left: 10vw;
+  top: 10vh;
+}
+
+.main-screen__hearts_1 span {
+  background: url("../images/b-01.png") 0 0/270% no-repeat;
+  padding-bottom: 90%;
+}
+.main-screen__hearts_2 {
+  width: 40vh;
+  max-width: 25%;
+  right: 10vw;
+  top: 10vh;
+}
+
+.main-screen__hearts_2 span {
+  background: url("../images/b-01.png") 0 0/191% no-repeat;
+  padding-bottom: 55%;
+}
+
+.main-screen__envelope,
+.main-screen__envelope span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main-screen__envelope span {
+  background: url("../images/t-06.png") top/auto 50% no-repeat;
+}
+
+.content {
+  padding-top: 200vh;
+}
+
+.content__container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 15px;
+}
+
+.content__title {
+  font-family: "Great Vibes", serif;
+  font-size: 70px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(92, 91, 91);
+}
+@media screen and (min-width: 475px) {
+  .content__title {
+    font-size: 90px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .content__title {
+    font-size: 120px;
+  }
+}
+@media screen and (min-width: 1960px) {
+  .content__title {
+    font-size: 200px;
+  }
+}
+@media screen and (max-width: 325.98px) {
+  .content__title {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 326px) and (max-width: 375.98px) {
+  .content__title {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 768.98px) {
+  .content__title {
+    margin-bottom: 170px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1280.98px) {
+  .content__title {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1440.98px) {
+  .content__title {
+    margin-bottom: 250px;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2000.98px) {
+  .content__title {
+    margin-bottom: 400px;
+  }
+}
+@media screen and (min-width: 2001px) {
+  .content__title {
+    margin-bottom: 350px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  .content__title {
+    margin-bottom: 550px;
+  }
+}
+@media only screen and (max-width: 1180px) and (min-width: 820px) {
+  .content__title {
+    margin-bottom: 750px;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .content__title {
+    margin-bottom: 350px;
+  }
+}
+
+.main-screen__clouds span {
+  transform: translate(0px, 100%);
+}
+
+.loaded .main-screen__clouds span {
+  transform: translate(0px, 15%);
+  transition: transform 0.8s ease;
+}
+
+.loaded .main-screen__clouds_1 span {
+  transition-delay: 0.5s;
+}
+
+.loaded .main-screen__clouds_2 span {
+  transition-delay: 0.8s;
+}
+
+.loaded .main-screen__clouds_3 span {
+  transition-delay: 1.1s;
+}
+
+.loaded .main-screen__clouds_4 span {
+  transition-delay: 1.4s;
+}
+
+.main-screen__envelope span {
+  transform: translate(0px, 100%);
+}
+
+.loaded .main-screen__envelope span {
+  transform: translate(0px, 0px);
+  transition: transform 1.5s ease 1.5s;
+}
+
+.main-screen__hearts_1 span {
+  transform: translate(-300px, 0px);
+}
+
+.main-screen__hearts_2 span {
+  transform: translate(300px, 0px);
+}
+
+.loaded .main-screen__hearts_1 span,
+.loaded .main-screen__hearts_2 span {
+  transform: translate(-50px, 0px);
+  transition: transform 0.8s ease 2.3s;
+}/*# sourceMappingURL=main.css.map */
